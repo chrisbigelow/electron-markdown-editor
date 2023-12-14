@@ -5,7 +5,7 @@ import {defaultKeymap} from '@codemirror/commands';
 import {history, historyKeymap} from '@codemirror/commands';
 import {indentOnInput} from '@codemirror/language';
 import {bracketMatching} from '@codemirror/language';
-import { KeyBinding } from '@codemirror/view';
+import {KeyBinding} from '@codemirror/view';
 import {lineNumbers, highlightActiveLineGutter} from '@codemirror/view';
 import {defaultHighlightStyle, syntaxHighlighting} from '@codemirror/language';
 import {javascript} from '@codemirror/lang-javascript';

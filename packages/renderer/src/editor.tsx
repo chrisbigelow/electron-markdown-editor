@@ -4,17 +4,24 @@ import './editor.css';
 
 interface Props {}
 
-const Editor: React.FC<Props> = (props) => {
+const Editor: React.FC<Props> = props => {
   const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
     initialDoc: 'Hello, World!',
     onChange: () => {},
   });
   useEffect(() => {
     if (editorView) {
-        // nothing for now
+      // nothing for now
     }
   }, [editorView]);
-  return <div className="editor-wrapper" ref={refContainer}>Editor</div>;
+  return (
+    <div
+      className="editor-wrapper"
+      ref={refContainer}
+    >
+      Editor
+    </div>
+  );
 };
 
 export default Editor;
